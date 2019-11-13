@@ -9,7 +9,7 @@
 
 ## Task 1: Data exploration
 
-![Fig1](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Figures/Age_length.png) 
+![Fig1](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Figures/Age_length.png) 
 
 ![Fig2](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Figures/Frequency.png) 
 
