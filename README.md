@@ -11,7 +11,7 @@
 
 ![Fig1](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Figures/Age_length.png) 
 
-![Fig2](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Figures/Frequency.png) 
+![Fig2](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Figures/Frequency.png) 
 
 Important points:
 
@@ -37,38 +37,38 @@ Once these estimations are obtained, the algorithm proceeds into M-Step. M-Step 
 
 The obtain.expectation function accepts the parameters from E-Step and computes the probability by using the Bayes Rule for each class k. Then in the maximise.parameters function, the new parameters μk, λk and σk are recalculated on the basis of the posterior probabilities above. Also, the likelihood.evaluation function computes the likelihood of new parameters. Finally, the log-likelihood obtained for these new parameters and stored for later comparison. In this step, the function also checks if the parameters meet any exit conditions are met. If not, this always returns to the obtain.expectation function; If so, the conditions can either be the number of iterations or a change in the likelihood smaller than the user defined epsilon. Once one of these conditions is met, the finalised parameters are returned to teamEM and finally returned to the user.
 
-![Diagram](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Figures/flowchart1.png)
+![Diagram](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Figures/flowchart1.png)
 
 
 
 ## Task 3: Algorithm implementation
 This script contains the teamEM wrapper function. 
 
-- [Code for implementing the EM algorithm](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/teamEM.R)
+- [Code for implementing the EM algorithm](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/teamEM.R)
 
 The set up, including best guesses, are in this file.
 
-- [Set up](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/best_guess.R)
+- [Set up](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/best_guess.R)
 
 This script contains the maximisation function. 
 
-- [Maximisation Function](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/maximisation.R)
+- [Maximisation Function](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/maximisation.R)
 
 The expecatation based on Bayes Theorem is calculated in this script.
 
-- [Expectation](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/obtain_expectation.R)
+- [Expectation](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/obtain_expectation.R)
 
 The code to update the parameters of the normal distributions are contained in this script.
 
-- [Parameter update](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/parameter_update.R)
+- [Parameter update](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/parameter_update.R)
 
 This script contains one function to calculate the log likelihood.
 
-- [Likelihood Calculation](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/likelihood.R)
+- [Likelihood Calculation](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/likelihood.R)
 
 And finally, all tests are included in this script.
 
-- [Tests](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/tests.R)
+- [Tests](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/tests.R)
 
 Enhancements: allow user to specify which column contains the classes and the data. This enables the user to pass in a dataframe which contains other columns names.
 
@@ -77,10 +77,10 @@ Enhancements: allow user to specify which column contains the classes and the da
 ## Task 4: Function testing
 The simulation for datasets can be found below.
 
-- [Simulation](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/dataset_simulation.R)
+- [Simulation](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/dataset_simulation.R)
 
 The testing function below creates a dataset 999 times with predefined parameters and checks if the results returned fall into the 95% interval.
-- [Test](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Scripts/test_algorithm.R)
+- [Test](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Scripts/test_algorithm.R)
 
 
 
@@ -96,7 +96,7 @@ The testing function below creates a dataset 999 times with predefined parameter
 
 - The original data with the densities of the mixture components superimposed.  
 
-![Hist_final](https://github.com/eirenjacobson/MT4113-A2-TeamD/blob/master/Figures/hist_final.png) 
+![Hist_final](https://github.com/pearllinyue/MT4113-Assignment2/blob/master/Figures/hist_final.png) 
 
 
 
